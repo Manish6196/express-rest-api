@@ -1,22 +1,9 @@
-import express, { Express } from 'express'
-import dotenv from 'dotenv'
+import http from 'node:http'
+import app from './app'
+import config from './config'
 
-dotenv.config()
+const server = http.createServer(app)
 
-const app: Express = express()
-const port = process.env.PORT || 3000
-
-app.get('/', (req, res) => {
-  // Logic to fetch users from the database
-  res.json({ users: [] })
-})
-
-app.post('/', (req, res) => {
-  // Logic to create a new user
-  res.json({ message: 'User created successfully' })
-})
-
-// Start the server
-app.listen(port, () => {
-  console.log(`User microservice listening at http://localhost:${port}`)
+server.listen(config.PORT, () => {
+  console.log(`Server listening at http://localhost:${config.PORT}`)
 })
