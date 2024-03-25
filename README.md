@@ -27,5 +27,5 @@ src/
 │   ├── app.ts
 │   └── index.ts
 ├── config.ts
-└── main.ts
+└── server.ts
 ```
