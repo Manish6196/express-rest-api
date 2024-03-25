@@ -19,4 +19,4 @@ app.get('/', (req, res) => {
   res.json({ message: 'Hello from API!' })
 })
 
-export default app
+export { app }
