@@ -1,7 +1,7 @@
 import http from 'node:http'
 import { app } from './app'
 import { PORT } from './config'
-import { connectDB } from './utils'
+import { connectDB } from './db'
 
 const server = http.createServer(app)
 
