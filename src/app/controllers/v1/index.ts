@@ -1,7 +1,7 @@
 import express, { Router } from 'express'
+import { ENV } from '@config/env'
+import { IRoute } from '@lib/interfaces'
 import { taskRouter } from './task'
-import { ENV } from '../../../config'
-import { IRoute } from 'app/lib/interfaces'
 
 const router = express.Router()
 

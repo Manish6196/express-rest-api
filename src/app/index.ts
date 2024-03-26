@@ -4,7 +4,7 @@ import cookieParser from 'cookie-parser'
 import compression from 'compression'
 import cors from 'cors'
 
-import routerV1 from './controllers/v1'
+import routerV1 from '@controllers/v1'
 
 const app: Express = express()
 
